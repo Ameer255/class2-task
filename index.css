@@ -31,6 +31,7 @@ background-color: #22ace4;
 border-left: 1px solid white;
 padding-left: 1%;
 }
+
 #header button{
     color: white;
     background-color: #22ace4; 
@@ -47,6 +48,13 @@ padding-left: 1%;
 
 #header-left{
     padding-top: 2%;
+}
+#header-left li{
+    list-style-type: none;
+    display: inline;
+}
+#header-left li:first-child a{
+    border-left: none;
 }
 
 #header-center{
@@ -69,22 +77,29 @@ padding-left: 1%;
     background-color: rgb(6, 78, 126);
     width: 100%;
     color: white;
-    
+   
 }
-#nav button{
-    
-    display: inline-block;
-    margin-left: 3%;
-    background-color: rgb(6, 78, 126);
-    height: 50px;
-    width: 15%;
-    border: none;
+#nav ul{
+    margin-left: -2%;
+    display: flex;  
+}
+#nav ul>div{
+    text-align: center;
+    width: 20%;
     border-left: 1px solid gray;
-    
+    height: auto;
+    text-align: center;
+    padding-top: 20px;
+    height: 45px;
+    background-color: rgb(6, 78, 126);
+}
+#nav li{
+    list-style-type: none;
 }
 #nav a{
     text-decoration: none;
     color: white;
+    display: block;
 }
 #content {
     height: auto;
@@ -228,29 +243,45 @@ font-size: larger;
    
 
 }
-#b-contain {
+footer {
    display: flex;
    width: 100%;
-   height: 430px;
+   flex-wrap: wrap;
    background-color: black;
    margin-top: 3%;
    border-bottom: 1px solid white;
-   padding-top: 2%;
+   padding: 2% 2%;
+   justify-content: space-between;
 }
-.b-btm {
-   width: 24%;
-   
-   
+footer li{
+    list-style-type: none;
+    margin-top: 2%;
+    margin-left: -15%;
+}
+footer ul{
+    margin-top: 4%;
+    margin-bottom: 10%;
+}
+footer a{
+    text-decoration: none;
+    color: rgb(184, 181, 181);
+}
+footer h3{
+    color: white;
+}
+
+.foot-child {
+   width: 22%;
    text-align: left;
    padding-left: 2em;
    color: white;
 }
 #foot {
-height: 120px;
-width: 100%;
-
+height: 100px;
+width: 94%;
+margin: 0 3%;
 background-color:black;
-
+border-top: 2px solid white;
 color: white;
 text-align: center;
 padding-top: 2em;
